@@ -1,0 +1,21 @@
+git다운로드 - git최신버전
+
+제어판 - 사용자 계정 - 자격 증명 관리자
+
+1주차 - 버전관리
+ls, touch, cat, cd
+
+git init - 파일을 git이 관리함 파일 안에 .git파일이 숨김상태로 생성
+git status - git이 관리하고있는 파일의 상태를 보여줌
+git log - 커밋한 로그 보여줌
+git add - 파일이름 - 커밋할 파일 추가함
+git add . - 현재파일 전체를 커밋할 파일에 추가함
+git config --global user.email "batjjong@gmail.com"
+git config --global user.name "batjjong"
+git config --list - git 구성목록 확인
+git commit -m "내용" - "내용"으로 커밋함
+git checkout "해쉬코드" - 커밋한 시점으로 이동
+git checkout - 가장 최근 시점 커밋으로 이동
+
+hash code - 딱 하나만 있는 코드
+commit 6edbb44f137eee620e9e467b4935ebf6a19838d4
