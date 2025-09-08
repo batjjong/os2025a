@@ -4,6 +4,17 @@ C:\Users\PC
 .gitconfig
 .lesshst
 
+리눅스 명령어
+echo
+rm
+history
 
+git 명령어
 
-
+git branch -M main -브랜치를 main으로 바꿈
+git remote add origin "url" - url을 origin으로 추가
+git remote remove origin - tjfwjdgks origin을 삭제함
+git remote -v - remote 한 리포지토리를 보여줌
+git push -u origin main - origin을 main 브렌치에 push함(이후 git push만 해도 됨)
+git push - 전에 올린곳에 push함
+git clone "url" - url을 복사함 
