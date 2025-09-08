@@ -1,0 +1,9 @@
+삭제 시 설정 삭제
+C:\Users\PC
+.bash_history
+.gitconfig
+.lesshst
+
+
+
+
