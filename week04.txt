@@ -10,3 +10,6 @@ git reset --hard HEAD~1 - 최근 커밋부터 1개 삭제
 git fetch
 git pull
 git push -f origin main -강제로 파일을 푸시
+
+git switch dev01
+git checkout dev01
