@@ -1,4 +1,5 @@
 리눅스 명령어
+history | less - 히스토리를 한줄씩 보여줌
 vi 파일명(vi filename)
 
 
