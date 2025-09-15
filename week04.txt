@@ -6,5 +6,7 @@ vi 파일명(vi filename)
 깃 명령어
 git commit --amend -m "수정할 커밋 메세지"
 git reset --hard HEAD~최근 커밋부터 삭제할 갯수
+git reset --hard HEAD~1 - 최근 커밋부터 1개 삭제 
 git fetch
 git pull
+git push -f origin main -강제로 파일을 푸시
