@@ -1,10 +1,16 @@
 리눅스 명령어
-cp 파일 파일
+cp 원본파일이름 복사할파일이름
+
+Go 명령어
+go mod init 프로젝트 폴더명
+go run 파일명.go
+go build 파일명.go
+
 
 깃 명령어
 git reset
-git merge dev01
+git merge 브렌치명
 
 기타
-.gitignore
-*.exe
+.gitignore 파일 생성(*.exe)
+package, import, func, println, printf, {}, ;
