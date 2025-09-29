@@ -3,15 +3,31 @@ package main
 import (
 	"fmt"
 	"math"
+	"reflect"
 	"strings"
 )
 
 func main() {
-	name := "Go developer"
+	//float32 = float
+	//float64 = double
 
-	fmt.Println("Git/Github for", name)
-	fmt.Println(math.Floor(2.71))
+	//var name string       선언
+	//name = "Kim Inha"     할당
 
-	upper := strings.ToUpper(name)
-	fmt.Println("Upper:", upper)
+	//var name = "Kim Inha" 선언 + 할당
+
+	name := "Kim Inha" //   선언 + 할당
+
+	var f float32
+	var d float64
+
+	f = 3.21
+	d = 3.21
+
+	fmt.Println(reflect.TypeOf(f))
+	fmt.Println(reflect.TypeOf(d))
+	fmt.Println(reflect.TypeOf(name))
+
+	fmt.Println(math.Ceil(2.31))
+	fmt.Println(strings.Title(name))
 }
