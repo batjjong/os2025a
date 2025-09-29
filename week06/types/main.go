@@ -2,9 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"reflect"
-	"strings"
 )
 
 func main() {
@@ -28,6 +26,9 @@ func main() {
 	fmt.Println(reflect.TypeOf(d))
 	fmt.Println(reflect.TypeOf(name))
 
-	fmt.Println(math.Ceil(2.31))
-	fmt.Println(strings.Title(name))
+	//기본값(값을 할당하지 않았을 때의 값)
+	//int = 0
+	//string = ""
+	//bool = 0
+
 }
