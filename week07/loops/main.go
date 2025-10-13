@@ -3,10 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
+	"strconv"
+	"strings"
 	//"reflect"
-	//"strings"
-	//"time"
 )
 
 func main() {
@@ -23,9 +24,10 @@ func main() {
 		fmt.Println("형변환", reflect.TypeOf(float64(length)))
 
 		var now time.Time = time.Now()
-		//var month time.Time = time.Time(now.Month())
+		//var month time.Month = now.Month()
+		month := now.Month()
 		var day int = now.Day()
-
+		fmt.Println(month)
 		fmt.Println(day)
 
 		univ := "Go$ rocks$"
@@ -33,9 +35,33 @@ func main() {
 		changed := changer.Replace(univ)
 		fmt.Println(changed)
 	*/
+	/*
+		//쉐도잉 shadowing
+		//var fmt string = "inha"
+
+		var int int = 7 //int int를 선언(쉐도잉)
+		var kim int = 0 //int를 쓰지 못함
+		fmt.Println(int)
+	*/
 
 	r := bufio.NewReader(os.Stdin)
-	i, _ := r.ReadString('\n')
+	i, err := r.ReadString('\n') //에러 무시
+	//fmt.Println(err)
+	if err != nil {
+		log.Fatal(err) //프로그램 중지하고 시간+에러 메세지 출력
+	}
+
+	i = strings.TrimSpace(i)
+	score, err := strconv.ParseFloat(i, 64)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if score >= 60 {
+		fmt.Println("pass")
+	} else {
+		fmt.Println("fail")
+	}
 	fmt.Println(i)
 
 }
