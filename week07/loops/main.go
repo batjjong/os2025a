@@ -44,6 +44,8 @@ func main() {
 		fmt.Println(int)
 	*/
 
+	//a, b := 10,9 //동시에 선언 할당 가능
+
 	r := bufio.NewReader(os.Stdin)
 	i, err := r.ReadString('\n') //에러 무시
 	//fmt.Println(err)
@@ -51,8 +53,8 @@ func main() {
 		log.Fatal(err) //프로그램 중지하고 시간+에러 메세지 출력
 	}
 
-	i = strings.TrimSpace(i)
-	score, err := strconv.ParseFloat(i, 64)
+	i = strings.TrimSpace(i)                //trim
+	score, err := strconv.ParseFloat(i, 64) //형변환
 	if err != nil {
 		log.Fatal(err)
 	}
