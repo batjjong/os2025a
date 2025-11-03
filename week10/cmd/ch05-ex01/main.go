@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var arrayBool [3]bool = [3]bool{true, false, true}
+	arrayBool := [3]bool{true, false, true} //배열 리터럴
 	var arrayInt [3]int
 	fmt.Println(arrayBool[1])
 	arrayInt[1] = 2
