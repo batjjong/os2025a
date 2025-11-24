@@ -12,6 +12,7 @@ func (l Kilometers) ToMiles() Miles {
 	return Miles(l * 0.621371)
 }
 
+// ... 리시버 매게변수
 func (m Meters) ToMiles() Miles {
 	return Miles(m * 0.000621371)
 }
